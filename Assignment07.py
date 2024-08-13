@@ -301,7 +301,7 @@ class IO:
             print()
             print(f"You have registered {student.first_name} {student.last_name} for {student.course_name}.")
         except ValueError as e:  # Check for Value Errors when creating Student objects (GD)
-            IO.output_error_messages("There was problem with the format of the data!", e)
+            IO.output_error_messages("There was a problem with the format of the data!", e)
         except Exception as e:
             IO.output_error_messages(message="Error: There was a problem with your entered data.", error=e)
         return student_data

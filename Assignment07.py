@@ -66,7 +66,7 @@ class Person:
 
     def __str__(self):
         """
-        :return: The Person's properties in a CSV string
+        :return: The Person's attributes in a CSV string
         """
         return f'{self.first_name},{self.last_name}'
 
@@ -103,13 +103,13 @@ class Student(Person):
 
     def __str__(self):
         """
-        return: The Student's properties in a CSV string
+        return: The Student's attributes in a CSV string
         """
         return f'{super().__str__()},{self.course_name}'
 
     def get_data_dict(self):
         """
-        return: The Student's properties in a dictionary.
+        return: The Student's attributes in a dictionary.
         For working with JSON data.
         """
         return {"FirstName": self.first_name, "LastName": self.last_name, "CourseName": self.course_name}

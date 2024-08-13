@@ -152,7 +152,7 @@ class FileProcessor:
                                             student['CourseName']))
 
         except ValueError as e:     # Check for Value Errors when creating Student objects (GD)
-            IO.output_error_messages("There was problem with the format of the data!", e)
+            IO.output_error_messages("There was a problem with the format of the data!", e)
         except FileNotFoundError as e:  # Added file check (GD)
             IO.output_error_messages("Text file must exist before running this script!", e)
         except Exception as e:

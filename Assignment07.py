@@ -287,7 +287,7 @@ class IO:
 
         :param student_data: list of Student objects (GD)
 
-        :return: list
+        :return: list of Student objects (GD)
         """
 
         try:
